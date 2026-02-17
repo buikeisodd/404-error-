@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .error-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
+        gap: 20px;
+        background: linear-gradient(180deg, #b72126 0%, #fe5f58 100%);
+        color: white;
+      }
+
+      h1 {
+        font-size: 10rem;
+        margin: 0 auto;
+      }
+      p {
+        margin: 0 auto;
+        font-weight: bolder;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 16px;
+      }
+
+      button {
+        padding: 10px;
+        border-radius: 100px;
+        border: 2px solid white;
+        font-weight: bold;
+      }
+
+      .first-button {
+        background-color: white;
+        color: rgb(209, 32, 62);
+      }
+
+      .second-button {
+        background-color: rgb(209, 32, 62);
+        color: white;
+      }
+
+      .icons {
+        display: flex;
+        gap: 16px;
+      }
+      .slide-in {
+        animation: slide 2s ease-out 2s infinite;
+        background-color: #333;
+        color: white;
+      }
+      @keyframes slide {
+        from {
+          transform: translateX(-100%);
+          opacity: 5;
+          color: #333;
+          background-color: white;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 0.9;
+          color: white;
+          background-color: #333;
+        }
+      }
+      .float {
+        animation: float 600ms ease-in-out 2s infinite;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      body {
+        font-family:
+          "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="error-page">
+        <div>
+          <h1>404</h1>
+          <p>WE ARE SORRY, BUT THE PAGE YOU REQUESTED WAS NOT FOUND</p>
+        </div>
+        <div class="buttons">
+          <button class="first-button">GO HOME</button>
+          <a href="contactus.html">
+            <button class="second-button">CONTACT US</button></a
+          >
+        </div>
+        <div class="icons">
+          <i class="fa-brands fa-facebook fa-bounce"></i>
+          <i class="fa-brands fa-twitter fa-bounce"></i>
+          <i class="fa-brands fa-pinterest-p fa-bounce"></i>
+          <i class="fa-brands fa-google-plus-g fa-bounce"></i>
+        </div>
+      </section>
+      <section class="slide-in">
+        <h1 class="float">ANIMATION HERE</h1>
+      </section>
+    </main>
+  </body>
+</html>
